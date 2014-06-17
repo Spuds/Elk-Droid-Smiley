@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package-info xmlns="http://www.elkarte.net/site/package-info" xmlns:elk="http://www.elkarte.net/">
+	<license>
+	<![CDATA[
+/**
+ * 
+ * @author spuds, I just put a package together
+ * @license Licensed under the Apache License, Version 2.0 
+ * @Copyright (C) 2009 The Android Open Source Project
+ *
+ * @version 1.0
+ */
+	]]>
+	</license>
+	<id>Spuds:Android_smileys</id>
+	<name>Android Smileys</name>
+	<version>1.0</version>
+	<type>smiley</type>
+
+	<install for="1.0 Beta 2 - 1.0.99">
+		<require-dir name="Android" destination="SMILEYDIR" />
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<redirect url="index.php?action=admin;area=smileys" timeout="5000">redirect.txt</redirect>
+	</install>
+
+	<uninstall for="1.0 Beta 2 - 1.0.99">
+		<remove-dir name="SMILEYDIR/Android" />
+	</uninstall>
+
+</package-info>
