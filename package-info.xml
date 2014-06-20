@@ -17,13 +17,13 @@
 	<version>1.0</version>
 	<type>smiley</type>
 
-	<install for="1.0 Beta 2 - 1.0.99">
+	<install for="1.0 RC1 - 1.0.99">
 		<require-dir name="Android" destination="SMILEYDIR" />
 		<readme type="file" parsebbc="true">readme.txt</readme>
 		<redirect url="index.php?action=admin;area=smileys" timeout="5000">redirect.txt</redirect>
 	</install>
 
-	<uninstall for="1.0 Beta 2 - 1.0.99">
+	<uninstall for="1.0 RC1 - 1.0.99">
 		<remove-dir name="SMILEYDIR/Android" />
 	</uninstall>
 
